@@ -1,0 +1,195 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
+body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #FEFFD3;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+  width: 100%;
+  background-color: maroon;
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between; /* title left, links right */
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   PAGE WRAPPER
+   Centers content vertically & horizontally
+=========================== */
+.page-wrapper {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: calc(100vh - 70px); /* subtract navbar height */
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   CONTAINER (FOR FORMS)
+=========================== */
+.container {
+  width: 50%;
+  max-width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  color: black;
+}
+
+/* ===========================
+   FORM INPUTS
+=========================== */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+button {
+  width: 100%;
+  background-color: maroon;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   PASSWORD VALIDATION
+=========================== */
+.validation-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.validation-list li {
+  margin-bottom: 5px;
+}
+
+.validation-list li.valid {
+  color: green;
+}
+
+.validation-list li.invalid {
+  color: red;
+}
+
+/* ===========================
+   LANDING PAGE
+=========================== */
+.landing-body h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.landing-body p {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* ===========================
+   RESPONSIVE WEB STYLES
+=========================== */
+@media (max-width: 1024px) {
+  .container {
+    width: 70%;
+    padding: 30px;
+  }
+
+  .landing-body h1 {
+    font-size: 36px;
+  }
+
+  .landing-body p {
+    font-size: 18px;
+  }
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .navbar .nav-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .landing-body h1 {
+    font-size: 32px;
+  }
+
+  .landing-body p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 40%;
+  }
+
+  .landing-body h1 {
+    font-size: 56px;
+  }
+
+  .landing-body p {
+    font-size: 22px;
+  }
+}
