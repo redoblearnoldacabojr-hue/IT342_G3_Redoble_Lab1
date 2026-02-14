@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gold">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Welcome Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back!"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here’s your activity overview."
+                android:textSize="14sp"
+                android:textColor="@color/dark_text"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="View Profile"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/maroon"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/maroon"/>
+
+    </LinearLayout>
+</ScrollView>
